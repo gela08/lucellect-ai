@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="dark h-full antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadata translated from Next.js Metadata object -->
+    <title>Lucellect | AI Assistant by Angela Gardan</title>
+    <meta name="description" content="The official Lucellect AI. Developed by Angela Gardan in 2026 for engineers and developers.">
+    <meta name="keywords" content="Lucellect, Angela Gardan, Engineering AI, Math AI, Clean AI Interface, Developer AI Assistant, lucellectai, lucellect.ai, lucellect chat, lucellect ai assistant, lucellect math support, ai">
+    <meta name="author" content="Angela Gardan">
+    
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lucellectai.vercel.app">
+    <meta property="og:title" content="Lucellect AI">
+    <meta property="og:description" content="Developed by Angela Gardan. Purpose-built for clarity and mathematical precision.">
+    <meta property="og:site_name" content="Lucellect">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="Eyn5sIqBA1Uhpd9AC6i6YN6OWbA5S1q44_HwIk72qHc">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Note: Geist and Geist Mono are typically loaded via Next/font, but we use standard sans/mono fallbacks here to ensure compatibility in the SPA environment -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        geist: ['system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'monospace'],
+                    },
+                    colors: {
+                        gray: {
+                            850: '#1f2937',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712; /* gray-950 */
+            color: #f3f4f6; /* gray-100 */
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4b5563;
+        }
+        
+        /* Markdown Styles */
+        .prose pre {
+            background-color: #1f2937 !important;
+            border: 1px solid #374151;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        .prose code {
+            color: #e5e7eb;
+            background-color: #374151;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.875em;
+            font-family: ui-monospace, monospace;
+        }
+        .prose pre code {
+            background-color: transparent;
+            padding: 0;
+            color: inherit;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+        }
+        .prose p:last-child {
+            margin-bottom: 0;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .prose ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+    </head>
+<body>
+    <div id="root" class="flex-1 flex flex-col"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.js"></script></body>
+</html>
